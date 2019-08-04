@@ -1,0 +1,241 @@
+/* ------------------------------------ 此页是UI样式覆盖 ------------------------------------ */
+/* 路由跟随样式 */
+/* .myactive{
+	background:#53cac3!important; 
+} */
+/* 导航栏高度 */
+.el-submenu__title {
+    height: 48px;
+    line-height: 48px;
+}
+
+/* 自定义ElementUI样式 */
+.el-submenu__title:hover {
+    background: #53cac3 !important;
+}
+
+.el-submenu__title i {
+    transition: all .3s;
+}
+
+.is-opened {
+    background: #53cac3 !important;
+}
+
+/*  */
+.el-menu {
+    background: #28323a;
+    border: none;
+}
+
+/* 划过子导航的背景色 */
+.el-menu-item:focus,
+.el-menu-item:hover {
+    outline: 0;
+    background-color: transparent;
+}
+
+/* 拟建实验室基本信息文本框 */
+.textarea-box .el-textarea .el-textarea__inner {
+    height: 100px;
+}
+
+/* 【【【【【【【【【【【【【【【【【【【【【【【【实验室建设 申报实验室】】】】】】】】】】】】】】】】】】】】】】 */
+/* 对话框样式 */
+.add-major .el-dialog__header {
+    background: rgb(230, 230, 230) !important;
+}
+
+.apply .el-dialog__body {
+    display: flex;
+    justify-content: space-between;
+    /* background: url(../img/select-add.png) no-repeat center; */
+}
+
+/* 实验室建设查看 列表 */
+.LookMake .has-gutter tr th {
+    background: rgb(242, 242, 242) !important;
+}
+
+/* 全局提交按钮统一样式 */
+.el-button--success {
+    border: 1px solid !important;
+    background: #fff !important;
+    color: #53cac3 !important;
+    transition: all .3s !important;
+}
+
+.el-button--success.is-plain:focus,
+.el-button--success.is-plain:hover {
+    background: #53cac3 !important;
+    border-color: #53cac3 !important;
+    color: #FFF !important;
+    transition: all .3s !important;
+}
+
+/* 通用弹框 */
+.el-dialog {
+    width: 30%;
+}
+
+.el-dialog .el-form-item__label {
+    line-height: 50px;
+}
+
+.el-dialog .el-select,
+.el-dialog .el-input {
+    width: 90%;
+}
+
+.el-dialog .el-input--suffix {
+    width: 100% !important;
+}
+
+.el-dialog .el-dialog__wrapper {
+    top: 10%;
+}
+
+.el-dialog .el-form-item {
+    margin-bottom: 5px;
+}
+
+.el-dialog .el-button {
+    padding: 12px 30px;
+    margin: 0 20px;
+}
+
+/* 居中弹框 */
+/* .el-dialog__wrapper{
+    position:fixed!important;
+    left:0!important;
+    right:0!important;
+    top:0!important;
+    bottom:0!important;
+    margin:auto!important; 
+} */
+
+.New_box .el-dialog__header {
+    padding-top: 0px;
+}
+
+.UseAdmin .el-dialog__body {
+    text-align: center !important;
+    overflow: hidden;
+}
+
+/* 角色设置 */
+.Use_box .el-dialog .el-dialog__header {
+    background: rgb(242, 242, 242);
+}
+
+.Use_box .el-dialog .el-dialog__footer {
+    text-align: center;
+}
+
+.Use_box .el-dialog .el-dialog__body {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+/* 表格弹框的上 */
+.Use-tableBox .el-dialog__body {
+    padding-top: 0 !important;
+}
+
+/* 状态icon */
+.statuS_icon0 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00EE00;
+    margin-right: 5px;
+}
+
+.statuS_icon1 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF00FF;
+    margin-right: 5px;
+}
+
+.statuS_icon2 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF4500;
+    margin-right: 5px;
+}
+
+/* message消息弹框 */
+.el-message {
+    top: 12% !important;
+}
+
+/* 角色、菜单表格样式 */
+.table-data-box th {
+    background: rgb(242, 242, 242) !important;
+}
+
+.table-data-box tbody .el-table__row--level-1 {
+    background: rgb(253, 255, 223) !important;
+}
+
+.table-data-box tbody .el-table__row--level-2 {
+    background: rgb(189, 217, 252) !important;
+}
+
+.table-data-box tbody .el-table__row--level-3 {
+    background: rgb(213, 201, 249) !important;
+}
+
+/* from表单 label宽度 */
+.my-state .el-form-item__label {
+    width: 85px !important;
+}
+
+/* 退出按钮 */
+.my-state .el-button--primary {
+    background: #26353d !important;
+    border-color: #26353d;
+}
+
+/* .el-button--primary{
+    background:red!important;
+} */
+.buildings .el-table td {
+    padding: 8px !important;
+}
+
+/* 选择器插件样式修改 */
+/*左边选择行高 */
+.el-tabs__item {
+    height: 35px !important;
+}
+
+.el-tabs__nav .is-active {
+    background: rgb(230, 230, 230);
+    border-radius: 5%;
+}
+.apply .el-dialog__footer{
+    text-align: center;
+}
+  /* 计划开设实验项目(个)： */
+  .item-one label{
+    width: 180px!important;
+  }
+  /* 带状态的表格颜色 */
+  .el-table .warning-row {
+    background: oldlace;
+  }
+
+  .el-table .success-row {
+    background: #f0f9eb;
+  }
+  /* 实验室建设表头 */
+ /* .table-box table th{
+    background: #53cac3!important;
+  } */

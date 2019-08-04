@@ -1,0 +1,114 @@
+/* sidebar icon */
+.icon-1{
+    background: url(../../assets/img/tubiao.png) no-repeat -80px -20px;
+}
+.icon-2{
+    background: url(../../assets/img/tubiao.png) no-repeat -224px -20px;
+}
+
+.icon-3{
+    background: url(../../assets/img/tubiao.png) no-repeat -15px -20px;
+}
+
+.icon-4{
+    background: url(../../assets/img/tubiao.png) no-repeat 0px -20px;
+}
+
+.icon-5{
+    background: url(../../assets/img/tubiao.png) no-repeat -48px -20px;
+}
+
+.icon-6{
+    background: url(../../assets/img/tubiao.png) no-repeat -112px -20px;
+}
+
+.icon-7{
+    background: url(../../assets/img/tubiao.png) no-repeat -208px -20px;
+}
+
+.icon-8{
+    background: url(../../assets/img/tubiao.png) no-repeat -240px -20px;
+}
+
+.icon-9{
+    background: url(../../assets/img/tubiao.png) no-repeat -177px -20px;
+}
+
+.icon-10{
+    background: url(../../assets/img/tubiao.png) no-repeat -193px -20px;
+}
+
+.icon-11{
+    background: url(../../assets/img/tubiao.png) no-repeat -193px -20px;
+}
+
+.icon-12{
+    background: url(../../assets/img/tubiao.png) no-repeat -144px -20px;
+}
+
+.icon-13{
+    background: url(../../assets/img/tubiao.png) no-repeat -160px -20px;
+}
+
+.icon-14{
+    background: url(../../assets/img/tubiao.png) no-repeat -128px -20px;
+}
+
+/* 课表管理业 icon */
+.i-1{
+    background:url(../../assets/img/icon.png) no-repeat  0px 5px;
+    transition: all .3s;
+}
+.i-2{
+    background:url(../../assets/img/icon.png) no-repeat  -180px 3px;
+    transition: all .3s;
+}
+.i-3{
+    background:url(../../assets/img/icon.png) no-repeat  -80px 5px;
+    transition: all .3s;
+}
+.a-active:hover .i-1{
+    background:url(../../assets/img/icon.png) no-repeat  0px -18px;
+    transition: all .3s;
+}
+.a-active:hover .i-2{
+    background:url(../../assets/img/icon.png) no-repeat  -180px -18px;
+    transition: all .3s;
+  }
+  .a-active:hover .i-3{
+    background:url(../../assets/img/icon.png) no-repeat  -80px -18px;
+    transition: all .3s;
+  }
+ 
+/* 课表管理背景图 */
+.table-box .table-header ul li:nth-child(2){
+    background: url(../../assets/img/Mon.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(3){
+    background: url(../../assets/img/Tues.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(4){
+    background: url(../../assets/img/Wed.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(5){
+    background: url(../../assets/img/Thur.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(6){
+    background: url(../../assets/img/Fri.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(7){
+    background: url(../../assets/img/Sat.png) no-repeat center bottom;
+}
+.table-box .table-header ul li:nth-child(8){
+    background: url(../../assets/img/Sun.png) no-repeat center bottom;
+}
+
+/* 划过改变导航栏样式 */
+.el-submenu__title:hover i{
+    background-position-y: 0px;
+    transition: all .3s;
+} 
+.a-active:hover{
+    color: #53cac3;
+    transition: all .3s;
+}

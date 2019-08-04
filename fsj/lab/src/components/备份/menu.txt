@@ -1,0 +1,327 @@
+<!-- 组件说明 -->
+<template>
+  <div class="sidebar-boos">
+    <div class="sidebar-person">
+      <div class="person-box">
+        <img src="../../assets/img/tea_1.jpg" alt>
+      </div>
+      <span>系统管理员</span>
+      <p>开发部</p>
+    </div>
+    <div class="sidebar-nav">
+      <el-col :span="24">
+        <el-menu
+          class="el-menu-vertical-demo"
+          text-color="rgba(255, 255, 255, 0.9 )"
+          :unique-opened="true"
+        >
+          <router-link to="/Inform">
+            <el-submenu index="1">
+              <template slot="title">
+                <i class="icon-1 icon-wh"></i>
+                <span>通知通告</span>
+              </template>
+            </el-submenu>
+          </router-link>
+
+          <!-- <router-link to="/Classadmin">
+            <el-submenu index="2">
+              <template slot="title">
+                <i class="icon-2 icon-wh"></i>
+                <span>课表管理</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Labmake">
+            <el-submenu index="3">
+              <template slot="title">
+                <i class="icon-3 icon-wh"></i>
+                <span>实验室建设</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Labadmin">
+            <el-submenu index="4">
+              <template slot="title">
+                <i class="icon-4 icon-wh"></i>
+                <span>实验室管理</span>
+              </template>
+              <el-menu-item index="4-1">实验室管理</el-menu-item>
+              <router-link to="/Lablog">
+                <el-menu-item index="4-2">实验室日志</el-menu-item>
+              </router-link>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Labres">
+            <el-submenu index="5">
+              <template slot="title">
+                <i class="icon-5 icon-wh"></i>
+                <span>实验室预约</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Apparatus" >
+            <el-submenu index="6">
+              <template slot="title">
+                <i class="icon-6 icon-wh"></i>
+                <span>仪器设备</span>
+              </template>
+              <router-link to="/Apparatus">
+                <el-menu-item index="6-1">借用归还</el-menu-item>
+              </router-link>
+              <router-link to="/Mend">
+                <el-menu-item index="6-2">设备报修</el-menu-item>
+              </router-link>
+              <i></i>
+              <router-link to="/lose">
+                <el-menu-item index="6-3">设废报失</el-menu-item>
+              </router-link>
+              <router-link to="/Valuable">
+                <el-menu-item index="6-4">贵重仪器</el-menu-item>
+              </router-link>
+            </el-submenu>
+          </router-link>
+
+                                                        
+          <router-link to="/Ruku">
+            <el-submenu index="7">
+              <template slot="title">
+                <i class="icon-7 icon-wh"></i>
+                <span>耗材管理</span>
+              </template>
+              <router-link to="/Ruku">
+                <el-menu-item index="7-1">耗材入库</el-menu-item>
+              </router-link>
+              <router-link to="/Chuku">
+                <el-menu-item index="7-2">耗材出库</el-menu-item>
+              </router-link>
+              <i></i>
+              <router-link to="/Pandian">
+                <el-menu-item index="7-3">耗材盘点</el-menu-item>
+              </router-link>
+              <router-link to="/Haocaijihua">
+                <el-menu-item index="7-4">学期耗材计划</el-menu-item>
+              </router-link>
+              <router-link to="/Gouzhijihua">
+                <el-menu-item index="7-5">学期购置计划</el-menu-item>
+              </router-link>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Sruku">
+            <el-submenu index="8">
+              <template slot="title">
+                <i class="icon-8 icon-wh"></i>
+                <span>涉危品管理</span>
+              </template>
+              <router-link to="/Sruku">
+                <el-menu-item index="8-1">涉危品入库</el-menu-item>
+              </router-link>
+              <router-link to="/Schuku">
+                <el-menu-item index="8-2">涉危品出库</el-menu-item>
+              </router-link>
+              <i></i>
+              <router-link to="/Spandian">
+                <el-menu-item index="8-3">涉危品盘点</el-menu-item>
+              </router-link>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Anquan">
+            <el-submenu index="9">
+              <template slot="title">
+                <i class="icon-9 icon-wh"></i>
+                <span>安全管理</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Chengji">
+            <el-submenu index="10">
+              <template slot="title">
+                <i class="icon-10 icon-wh"></i>
+                <span>成绩管理</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/HearClass">
+            <el-submenu index="11">
+              <template slot="title">
+                <i class="icon-11 icon-wh"></i>
+                <span>听查课管理</span>
+              </template>
+            </el-submenu>
+          </router-link>
+                                                        
+          <router-link to="/Tongji">
+            <el-submenu index="12">
+              <template slot="title">
+                <i class="icon-12 icon-wh"></i>
+                <span>统计</span>
+              </template>
+            </el-submenu>
+          </router-link>
+
+                                                        
+          <el-submenu index="13">
+            <template slot="title">
+              <i class="icon-13 icon-wh"></i>
+              <span>审批管理</span>
+            </template>
+            <el-menu-item index="13-1">代课管理</el-menu-item>
+            <el-menu-item index="13-2">上课管理</el-menu-item>
+            <i></i>
+            <el-menu-item index="13-3">调课审批</el-menu-item>
+            <el-menu-item index="13-4">实验室预约</el-menu-item>
+            <el-menu-item index="13-5">实验室日志</el-menu-item>
+            <el-menu-item index="13-6">实验室建设</el-menu-item>
+          </el-submenu>
+                                                        
+          <el-submenu index="14">
+            <template slot="title">
+              <i class="icon-14 icon-wh"></i>
+              <span>系统设置</span>
+            </template>
+            <el-menu-item index="14-1">数据设置</el-menu-item>
+            <el-menu-item index="14-2">实验课程设置</el-menu-item>
+            <i></i>
+            <el-menu-item index="14-3">可开放课时设置</el-menu-item>
+          </el-submenu>-->
+        </el-menu>
+      </el-col>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {},
+  data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+    created() {
+      LoadMenu();
+    },
+    LoadMenu() {
+      this.$axios
+        .post(
+          "http://192.168.1.121:80/api/youzhitu/cms/login/getWebMenu",
+          qs.stringify({
+            userName: "admin"
+          })
+        )
+        .then(response => {
+          console.log(response);
+        });
+    }
+  }
+};
+</script>
+
+<style scoped>
+.el-menu-item.is-active {
+  color: #53cac3;
+  transition: all 0.2s;
+  border-left: 5px solid #53cac3;
+}
+.sidebar-boos {
+  width: 201px;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  float: left;
+  background: #28323a;
+}
+/* sidebar 个人资料 */
+.sidebar-person {
+  width: 200px;
+  height: 120px;
+  float: left;
+  font-size: 15px;
+  padding: 15px 0 25px 0;
+  text-align: center;
+  background: url(../../assets/img/head-line.png) no-repeat center bottom;
+}
+/* 头像样式 */
+.person-box {
+  width: 100%;
+  height: 60px;
+}
+.person-box img {
+  width: 60px;
+  display: inline;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+.person-box img:hover {
+  border-radius: 10%;
+  transition-duration: 300ms;
+}
+/* 权限样式 */
+.sidebar-person span {
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+  line-height: 20px;
+}
+/* 部门样式 */
+.sidebar-person p {
+  height: 20px;
+  line-height: 1.4;
+  vertical-align: middle;
+  color: #999;
+}
+.sidebar-nav {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+/* sidebar */
+.el-menu {
+  width: 100%;
+  padding-top: 25px;
+}
+/* i的宽高 */
+.icon-wh {
+  width: 16px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+  display: inline-block;
+}
+/* icon */
+.el-submenu {
+  border-bottom: solid 1px #2c3740;
+}
+.el-submenu :nth-child(3) {
+  display: none;
+  /* font-size: 20px; */
+}
+/* 标题字体16px */
+.el-submenu span {
+  font-size: 16px !important;
+}
+/* 字体与资料字体对齐 */
+.template {
+  padding-left: 35px;
+}
+.el-menu-item {
+  border-left: 5px solid transparent;
+  padding: 0 20px 0 55px !important;
+}
+
+/* 箭头大小 */
+.icon-font {
+  font-size: 40px !important;
+}
+/* 导航栏高亮样式 */
+.el-submenu {
+  color: red !important;
+}
+</style>

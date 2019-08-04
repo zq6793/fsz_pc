@@ -1,0 +1,83 @@
+
+/* css样式重置文件 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    font-size: 100%;
+    /* 字体继承 */
+	font: inherit;      
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul li{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	height: 100%;
+	color: #666;
+}
+/* 附加style */
+.m20{
+    margin:20px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.ml20{
+	margin-left: 20px;
+}
+/* 去掉饿了么自带箭头 */
+.el-submenu__icon-arrow{
+	display: none;
+  }
+  .el-menu--inline li:hover{
+	background: rgb(63, 67, 70);
+  }
+  .el-menu--inline li:hover .el-icon-s-promotion{
+	  right: 0px;
+  }
+  /* 全局滚动条样式 */
+  ::-webkit-scrollbar{ 
+    width: 0px; 
+    height: 16px; 
+ }
+/* 全局占位符 */
+.zw{
+	display: inline-block;
+	width: 100%;
+}
